@@ -6,12 +6,14 @@ Ubuntu Linux 에서 CentOS의 Bash 셸 사용하기
 3. 저장소 추가
 4. 패키지 업데이트
 5. 패키지 설치
-6. 설치 되었는지 확인
-7. docker centos 셸 추가
-8. docker에서 centos 셸 실행
-9. centos 버전 확인
-10. 확인 및 삭제 명령어
+6. Docker 서비스 등록
+7. 설치 되었는지 확인
+8. docker centos 셸 추가
+9. docker에서 centos 셸 실행
+10. centos 버전 확인
+11. 확인 및 삭제 명령어
 ```
+
 1.&nbsp;관련 환경 설치
 --------------------------
 ```
@@ -226,21 +228,20 @@ CentOS Linux release 8.4.2105
 11.&nbsp;확인 및 삭제 명령어
 --------------------------
 ```
-도커 정보 확인
+도커 정보 확인 : docker images
 root@server-b:~# docker images
 REPOSITORY    TAG       IMAGE ID       CREATED         SIZE
 hello-world   latest    feb5d9fea6a5   18 months ago   13.3kB
 centos        latest    5d0da3dc9764   18 months ago   231MB
 
 
-상세확인
+상세확인 : docker container ls -a
 root@server-b:~# docker container ls -a
 CONTAINER ID   IMAGE         COMMAND    CREATED         STATUS                      PORTS     NAMES
 abf309898f78   centos        "bash"     5 minutes ago   Exited (0) 21 seconds ago             romantic_snyder
 781db22ca25c   hello-world   "/hello"   9 minutes ago   Exited (0) 9 minutes ago              hungry_swanson
 
-컨테이너 삭제
-docker rm 컨테이너ID
+컨테이너 삭제 : docker rm 컨테이너ID
 root@server-b:~# docker rm 781db22ca25c
 781db22ca25c
 root@server-b:~# docker container ls -a

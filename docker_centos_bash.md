@@ -34,7 +34,7 @@ Scanning linux images...
 
 Running kernel seems to be up-to-date.
 ```
-2.&nbsp;관련 환경 설치
+2.&nbsp;도커에서 배포하는 GPG(Gun Privacy Guard) 키 설치
 --------------------------
 ```
 root@server-b:~# curl -fsSl https://download.docker.com/linux/ubuntu/gpg | apt-key add -

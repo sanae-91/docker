@@ -168,7 +168,7 @@ lines 1-22/22 (END)
 
 ```
 
-7.&nbsp;Docker 서비스 등록
+7.&nbsp;설치 되었는지 확인
 --------------------------
 ```
 
@@ -201,7 +201,7 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
 
-8.&nbsp;Docker 서비스 등록
+8.&nbsp;docker centos 셸 추가
 --------------------------
 ```
 root@server-b:~# docker pull centos
@@ -218,7 +218,7 @@ docker.io/library/centos:latest
 root@server-b:~# docker run -it centos bash
 [root@abf309898f78 /]#
 ```
-10.&nbsp;Docker 서비스 등록
+10.&nbsp;centos 버전 확인
 --------------------------
 ```
 [root@abf309898f78 /]# cat /etc/system-release
